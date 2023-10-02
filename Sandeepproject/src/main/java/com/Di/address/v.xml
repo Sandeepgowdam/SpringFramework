@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+
+ <bean name="a1" class=" com.Di.address.Address">
+ 
+ <property name="District">
+ <value>Banglore</value>
+ </property>
+ 
+  <property name="taluk">
+ <value>hoskote</value>
+ </property>
+ 
+  <property name="pincode">
+ <value>562114</value>
+ </property>
+ 
+ 
+ </bean>
+
+ <bean name="a2" class=" com.Di.address.Address">
+ 
+ <property name="District">
+ <value>kgf</value>
+ </property>
+ 
+  <property name="taluk">
+ <value>malur</value>
+ </property>
+ 
+  <property name="pincode">
+ <value>56133</value>
+ </property>
+ 
+ 
+ </bean>
+  
+
+</beans>

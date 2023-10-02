@@ -1,0 +1,15 @@
+when ever the class is depandency of other class at time we will assign one bean to other that technique 
+is called as hardCoding
+
+when ever your are hardCoding complsory you need to create default constructor or else it will throw an error
+
+		Object o1 = context.getBean("s3");
+		Student s3 = (Student) o1; 
+		
+here the context.getBean is a Object class so to convert to primitive we are explictly type cast(down cast)
+ 
+ Student s3= (Student) context.getBean("s3");	
+ 
+ 
+ here the hard coding is lenthy procedure we must keeps assigning one bean to other so to avoid this 
+ autowire is implemented 	

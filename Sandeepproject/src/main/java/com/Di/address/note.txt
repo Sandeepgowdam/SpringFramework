@@ -1,0 +1,45 @@
+package com.Di.address;
+
+public class Address {
+private String district;
+public Address() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+public Address(String district, String taluk, int pincode) {
+	super();
+	this.district = district;
+	this.taluk = taluk;
+	this.pincode = pincode;
+}
+private String taluk;
+private int pincode;
+public String getDistrict() {
+	return district;
+}
+public void setDistrict(String district) {
+	this.district = district;
+}
+public String getTaluk() {
+	return taluk;
+}
+public void setTaluk(String taluk) {
+	this.taluk = taluk;
+}
+public int getPincode() {
+	return pincode;
+}
+public void setPincode(int pincode) {
+	this.pincode = pincode;
+}
+@Override
+public String toString() {
+	return "Address [district=" + district + ", taluk=" + taluk + ", pincode=" + pincode + "]";
+}
+
+
+
+}
+.....................................................................................................................................
+above code is also correct for the depandendcy injection along with the getters and setters you can also use the constructors 
+using fields along you must include the default constructor or else it will produces the exception 
